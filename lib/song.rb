@@ -1,5 +1,5 @@
 require 'pry'
-require_relative '../lib/concerns/memorable'
+
 
 class Song
   extend Memorable
@@ -20,14 +20,6 @@ class Song
   def self.all
     @@songs
   end
-
-  # def self.reset_all
-  #   self.all.clear
-  # end
-
-  # def self.count
-  #   self.all.count
-  # end
 
   def artist=(artist)
     @artist = artist
